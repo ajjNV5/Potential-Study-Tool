@@ -12,7 +12,7 @@ warnings.filterwarnings('ignore')
 # ========================
 ### Call Functions
 # ========================
-script_path = '000_init.py'
+script_path = '../000_init.py'
 
 with open(script_path, 'r') as f:
     script_code = f.read()
@@ -24,7 +24,7 @@ exec(script_code)
 # ========================
 st.set_page_config(page_title="Measure List Creation", layout="wide")
 # Load the image
-image = Image.open('NV5.jpg')
+image = Image.open('../NV5.jpg')
 # Create columns
 col1, col2 = st.columns([0.2, 0.8])
 # Place the image in the first column

@@ -1,0 +1,39 @@
+We are calculating Technical potential which is replacing every single measure with the most efficient option
+
+
+Layer - End-use, Building type, Sector(Res, Com)
+
+
+Table - baseline measure name and it savings per year in kwh
+Table - efficient measure name and it savings per year in kwh
+
+Table -  measure savings changes based on building type (scaling factor) (Single family given for res table will be 1 for sf and mf will be .8 depending on the measure) (Make this whole table 1 for now) 
+
+Table - By Building type and measure Feasibility
+
+Table - By Building type and measure Not Complete (Retrofit, Markets)
+
+Table - Market size - (how many of each unit are there) (ex. single family - 1,000)
+
+Table - Market multiplier - (in a single unit how many instances of that measure are installed)
+
+
+Example:
+Electric storage water heater baseline kwh
+Efficient heat pump water heater 
+Assuming in Retrofit market for simplicity
+Water heating end-use (space heating secondary effects ignored)
+
+(baseline_kwh - efficient_kwh) = saved_kwh
+
+saved_kwh*building_type_scaling_factors = new table of savings by building type
+
+
+Multiply by our market size (Inputs - Customer population from utility (how many single family homes are in to service territory) (Commercial 1000 Sq) 100,000 customers Res | 1,000,000 sq commercial 
+
+Table - Market multiplier - (in a single unit how many instances of that measure are installed) (average single family home in this territory has 1.1 water heaters, Small office 0.3 water heaters per 1000 sq)
+
+Then adjust with the factors - removed saving that are not feasible (Multiply by respective feasibility)
+Remove measures that have already been upgraded (Not - Complete factor)
+
+Result is the max amount of energy saved if every measure(from our list) is upgraded.
